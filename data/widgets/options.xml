@@ -301,9 +301,8 @@
                  text="@.drag_and_drop_from_edges"
                  pref="timeline.drag_and_drop_from_edges" />
           <hbox>
-            <hbox expansive="true" />
+            <boxfiller />
             <button id="reset_timeline_sel" text="@general.reset" width="60" />
-            <button id="reset_timeline_sel_as_v12" text="@.reset_as_v12" />
           </hbox>
 	</vbox>
 
@@ -347,6 +346,9 @@
 
 	    <boxfiller />
 	    <colorpicker id="cursor_color" rgba="true" />
+
+            <check text="@.snap_cursor_to_grid"
+                   pref="cursor.snap_to_grid" cell_hspan="2" />
 	  </grid>
         </vbox>
 
